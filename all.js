@@ -6,13 +6,8 @@ const loginAccount = document.querySelector(".loginAccount");
 const loginPassword = document.querySelector(".loginPassword");
 const login = document.querySelector(".login");
 
-create.addEventListener("click", function (e) {
-  callSignUp();
-});
-
-login.addEventListener("click", function (e) {
-  callLogin();
-});
+create.addEventListener("click", callSignUp);
+login.addEventListener("click", callLogin);
 
 function callSignUp() {
   if (createAccount.value == "" || createPassword.value == "") {
